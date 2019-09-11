@@ -1,12 +1,10 @@
-<?php
- require("pub.php");
+require("pub.php");
  require("line.php");
-
-
 
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
+
 $events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['ESP'])) {
@@ -20,9 +18,7 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
-
-	}
-			if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
@@ -31,15 +27,15 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 
 			$Topic = "NodeMCU1" ;
-		
 			getMqttfromlineMsg($Topic,$text);
 			   
 			
 		}
+	}
 }
-
 $Topic = "NodeMCU1" ;
- getMqttfromlineMsg($Topic,$text);
+$text = "Test";
+getMqttfromlineMsg($Topic,$text);
 /*while($text=="1")) {
 $Topic = "NodeMCU1" ;
 	if($text=="1"){ $text ="1";
