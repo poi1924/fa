@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			
 		}
 }
-while(($text=="1")&&($text=="2")) {
+while($text<"0")) {
 $Topic = "NodeMCU1" ;
 	if($text=="1"){ $text ="1";}
 	eles if($text=="2"){ $text ="2";}
