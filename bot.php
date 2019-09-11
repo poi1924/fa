@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 
 			$Topic = "NodeMCU1" ;
-			$text="1";
+			$text="2";
 			getMqttfromlineMsg($Topic,$text);
 			   
 			
