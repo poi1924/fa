@@ -38,10 +38,12 @@ if (!is_null($events['events'])) {
 		}
 }
 $text = $event['message']['text'];
-while($text==1)) {
+while($text=="1")) {
 $Topic = "NodeMCU1" ;
-	if($text=="1"){ $text ="1";}
-	eles if($text=="2"){ $text ="2";}
-getMqttfromlineMsg($Topic,$text);
+	if($text=="1"){ $text ="1";
+       getMqttfromlineMsg($Topic,$text);}
+	eles if($text=="2"){ $text ="2";
+getMqttfromlineMsg($Topic,$text);}
+
 }
 ?>
