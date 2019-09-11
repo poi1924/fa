@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 	}
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			$text1 = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -32,12 +32,12 @@ if (!is_null($events['events'])) {
 
 			$Topic = "NodeMCU1" ;
 		
-			getMqttfromlineMsg($Topic,$text);
+			getMqttfromlineMsg($Topic,$text1);
 			   
 			
 		}
 }
-while($text=="2") {
+while($text1=="2") {
 $Topic = "NodeMCU1" ;
 $text ="1";
 getMqttfromlineMsg($Topic,$text);}
