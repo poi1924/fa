@@ -24,13 +24,14 @@ if (!is_null($events['events'])) {
 	}
 			if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = "1";
+			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
 
 			$Topic = "NodeMCU1" ;
+			$text="1";
 			getMqttfromlineMsg($Topic,$text);
 			   
 			
