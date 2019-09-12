@@ -39,6 +39,6 @@ while($text>"0") {
 $Topic = "NodeMCU1" ;
 	if($text==1){ $text =1;
        getMqttfromlineMsg($Topic,$text);}
-	if($text==2){ $text =2;
+	else{ $text =2;
 getMqttfromlineMsg($Topic,$text);}}
 ?>
