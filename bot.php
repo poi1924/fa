@@ -35,7 +35,12 @@ if (!is_null($events['events'])) {
 	}
 }
 $Topic = "NodeMCU1" ;
-$text = "Test";
+$text = $event['message']['text'];
 getMqttfromlineMsg($Topic,$text);
-echo "OK3";
+while($text=="1")) {
+$Topic = "NodeMCU1" ;
+	if($text=="1"){ $text ="1";
+       getMqttfromlineMsg($Topic,$text);}
+	eles if($text=="2"){ $text ="2";
+getMqttfromlineMsg($Topic,$text);}
 ?>
