@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 	}
 }
 
-while($text=="1"||$x<"5") {
+while(($text=="1")&& ($x<"5")) {
 $Topic = "NodeMCU1" ;
 	$x=$x+1;
 	$text ="1";
