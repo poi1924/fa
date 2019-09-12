@@ -42,6 +42,5 @@ $Topic = "NodeMCU1" ;
        getMqttfromlineMsg($Topic,$text);}
 else{$text=="0"}}
 
-$text =$event['message']['text'];
-getMqttfromlineMsg($Topic,$text);
+
 ?>
