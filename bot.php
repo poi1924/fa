@@ -14,6 +14,7 @@ if (!is_null($events['ESP'])) {
 		
 	echo "OK";
 	}
+
 if (!is_null($events['events'])) {
 	echo "line bot";
 	// Loop through each event
@@ -35,12 +36,16 @@ if (!is_null($events['events'])) {
 	}
 }
 
-while(($text=="1")) {
-$Topic = "NodeMCU1" ;
+$i = 1;
+
+while (($text=="1")&&($i <= 10)) {
+	$text =$event['message']['text'];
+       getMqttfromlineMsg($Topic,$text);
+    $i++;
+}
 	
-	if ($text=="1"){$text =$event['message']['text'];
-       getMqttfromlineMsg($Topic,$text);}
-else{$text=="0"}}
+	
+
 
 
 ?>
