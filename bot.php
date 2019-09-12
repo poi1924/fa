@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 
 $i = 1;
 
-while (($text=="1")&&($i <= 10)) {
+while (($text=="1")&&($i <= 100)) {
 	$text =$event['message']['text'];
        getMqttfromlineMsg($Topic,$text);
     $i++;
