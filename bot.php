@@ -39,8 +39,8 @@ $text = $event['message']['text'];
 getMqttfromlineMsg($Topic,$text);
 while($text>"0") {
 $Topic = "NodeMCU1" ;
-	if($text==1){ $text ="1";
+	if($text==1){ $text =1;
        getMqttfromlineMsg($Topic,$text);}
-	if($text==2){ $text ="2";
+	if($text==2){ $text =2;
 getMqttfromlineMsg($Topic,$text);}}
 ?>
